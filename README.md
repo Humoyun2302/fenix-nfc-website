@@ -114,9 +114,11 @@ publish = "dist"
 
 SPA-редиректы настроены на `index.html`.
 
+Production: https://fenix-nfc-website.netlify.app
+
 ### GitHub
 
-Репозиторий: `fenix-nfc-website`
+Репозиторий: https://github.com/Humoyun2302/fenix-nfc-website
 
 ## Замечания по i18n
 
