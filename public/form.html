@@ -2,35 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>FENIX NFC Form</title>
+    <title>FENIX NFC — форма заявки</title>
+    <meta name="robots" content="noindex" />
   </head>
   <body>
-    <!--
-      Static form skeleton for Netlify Forms detection.
-      Netlify parses this HTML at deploy time.
-    -->
-    <form
-      name="fenix-contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      netlify-honeypot="bot-field"
-      hidden
-    >
+    <h1>FENIX NFC contact form endpoint</h1>
+    <form name="fenix-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
       <input type="hidden" name="form-name" value="fenix-contact" />
-      <input name="bot-field" />
-      <input name="name" />
-      <input name="phone" />
-      <input name="company" />
-      <select name="solution">
-        <option value="menu">Электронное меню</option>
-        <option value="plaques">NFC-таблички</option>
-        <option value="cards">NFC-визитки</option>
-        <option value="hotel">Решение для отеля</option>
-        <option value="other">Другое</option>
-      </select>
-      <input name="quantity" />
-      <textarea name="comment"></textarea>
+      <p style="display:none">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+      <p><label>Name <input name="name" /></label></p>
+      <p><label>Phone <input name="phone" /></label></p>
+      <p><label>Company <input name="company" /></label></p>
+      <p>
+        <label>
+          Solution
+          <select name="solution">
+            <option value="menu">menu</option>
+            <option value="plaques">plaques</option>
+            <option value="cards">cards</option>
+            <option value="hotel">hotel</option>
+            <option value="other">other</option>
+          </select>
+        </label>
+      </p>
+      <p><label>Quantity <input name="quantity" /></label></p>
+      <p><label>Comment <textarea name="comment"></textarea></label></p>
+      <p><button type="submit">Send</button></p>
     </form>
   </body>
 </html>
