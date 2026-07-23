@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fenixnfc.netlify.app/sitemap.xml
+Sitemap: https://fenix-nfc-website.netlify.app/sitemap.xml

@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: 'NFC-решения для современного бизнеса',
   description:
     'FENIX NFC производит NFC-таблички, цифровые визитки и электронные меню для ресторанов, кафе, отелей и других бизнесов.',
-  url: 'https://fenixnfc.netlify.app',
+  url: 'https://fenix-nfc-website.netlify.app',
   locale: 'ru',
   contacts: {
     phone: '+998 90 000 00 00',
