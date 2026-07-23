@@ -35,9 +35,17 @@
     }
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-ink text-white antialiased;
     font-family: var(--font-body);
+  }
+
+  #root {
     overflow-x: hidden;
   }
 

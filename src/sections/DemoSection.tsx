@@ -4,17 +4,16 @@ import { SectionHeading } from '@/components/SectionHeading'
 
 export function DemoSection() {
   return (
-    <section id="demo" className="section-pad py-16 sm:py-24">
+    <section id="demo" className="section-pad py-24 sm:py-32">
       <div className="container-shell">
         <Reveal>
           <SectionHeading
-            eyebrow="Демонстрация"
-            title="Один жест — и страница уже открыта"
-            description="Так выглядит путь гостя: касание, NFC-сигнал и мгновенный переход к нужному контенту."
-            className="mb-10"
+            title="Демонстрация"
+            description="Касание — и нужная страница уже на экране."
+            className="mb-14"
           />
         </Reveal>
-        <Reveal delay={0.08}>
+        <Reveal delay={0.06}>
           <InteractiveDemo />
         </Reveal>
       </div>

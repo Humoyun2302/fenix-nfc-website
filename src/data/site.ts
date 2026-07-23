@@ -1,8 +1,7 @@
 export const siteConfig = {
   name: 'FENIX NFC',
   tagline: 'NFC-решения для современного бизнеса',
-  description:
-    'FENIX NFC производит NFC-таблички, цифровые визитки и электронные меню для ресторанов, кафе, отелей и других бизнесов.',
+  description: 'NFC-таблички, цифровые визитки и электронные меню для бизнеса.',
   url: 'https://fenix-nfc-website.netlify.app',
   locale: 'ru',
   contacts: {
@@ -26,7 +25,7 @@ export const navLinks = [
   { id: 'hero', label: 'Главная', href: '#hero' },
   { id: 'solutions', label: 'Решения', href: '#solutions' },
   { id: 'how-it-works', label: 'Как это работает', href: '#how-it-works' },
-  { id: 'benefits', label: 'Преимущества', href: '#benefits' },
-  { id: 'projects', label: 'Проекты', href: '#projects' },
-  { id: 'contact', label: 'Контакты', href: '#contact' },
+  { id: 'demo', label: 'Демо', href: '#demo' },
+  { id: 'offer', label: 'Цена', href: '#offer' },
+  { id: 'contact', label: 'Заявка', href: '#contact' },
 ] as const

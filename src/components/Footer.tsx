@@ -21,7 +21,7 @@ export function Footer() {
         <div className="container-shell grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
             <Logo />
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
               {siteConfig.description}
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
