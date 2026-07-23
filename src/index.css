@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #070708;
+  --color-ink-soft: #0e0e10;
+  --color-graphite: #151518;
+  --color-panel: #1a1a1e;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-muted: #9a9aa3;
+  --color-soft: #d4d4d8;
+  --color-flame: #ff6a2b;
+  --color-flame-soft: #ff8b57;
+  --color-flame-deep: #d94d12;
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-ink text-white antialiased;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-flame) 40%, transparent);
+    color: white;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-flame);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    background: linear-gradient(120deg, #fff 10%, #ff8b57 55%, #ff6a2b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .surface-glow {
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 106, 43, 0.18), transparent 55%),
+      radial-gradient(ellipse 50% 40% at 100% 0%, rgba(255, 139, 87, 0.08), transparent 40%),
+      radial-gradient(ellipse 40% 30% at 0% 20%, rgba(255, 106, 43, 0.06), transparent 40%);
+  }
+
+  .grid-fade {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+  }
+
+  .hairline {
+    border: 1px solid var(--color-line);
+  }
+
+  .section-pad {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-shell {
+    @apply mx-auto w-full max-w-6xl;
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#070708"/>
+  <circle cx="980" cy="120" r="220" fill="#FF6A2B" fill-opacity="0.16"/>
+  <circle cx="180" cy="520" r="180" fill="#FF8B57" fill-opacity="0.08"/>
+  <text x="96" y="280" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="4">FENIX NFC</text>
+  <text x="96" y="360" fill="#9A9AA3" font-family="Arial, sans-serif" font-size="34">NFC-B01;8G:8 8 M;5:B@>==K5 <5=N 4;O 187=5A0</text>
+  <rect x="96" y="420" width="180" height="8" rx="4" fill="#FF6A2B"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#101014"/>
+  <rect x="220" y="70" width="360" height="360" rx="32" fill="url(#g)" stroke="rgba(255,255,255,0.12)"/>
+  <text x="300" y="140" fill="#FFFFFF" font-family="Arial" font-size="22" letter-spacing="6">FENIX</text>
+  <circle cx="400" cy="250" r="48" stroke="#FF6A2B" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="400" cy="250" r="32" stroke="#FF6A2B" stroke-opacity="0.65" stroke-width="2"/>
+  <circle cx="400" cy="250" r="8" fill="#FF6A2B"/>
+  <text x="300" y="360" fill="#9A9AA3" font-family="Arial" font-size="16">Table Plaque</text>
+  <defs>
+    <linearGradient id="g" x1="220" y1="70" x2="580" y2="430">
+      <stop stop-color="#222228"/>
+      <stop offset="1" stop-color="#121216"/>
+    </linearGradient>
+  </defs>
+</svg>

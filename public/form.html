@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FENIX NFC Form</title>
+  </head>
+  <body>
+    <!--
+      Static form skeleton for Netlify Forms detection.
+      Netlify parses this HTML at deploy time.
+    -->
+    <form
+      name="fenix-contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="fenix-contact" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="phone" />
+      <input name="company" />
+      <select name="solution">
+        <option value="menu">Электронное меню</option>
+        <option value="plaques">NFC-таблички</option>
+        <option value="cards">NFC-визитки</option>
+        <option value="hotel">Решение для отеля</option>
+        <option value="other">Другое</option>
+      </select>
+      <input name="quantity" />
+      <textarea name="comment"></textarea>
+    </form>
+  </body>
+</html>
